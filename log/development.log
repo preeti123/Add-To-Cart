@@ -124,3 +124,45 @@ Migrating to CreateLinks (20131220015819)
   [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
   [1m[35mLink Load (0.5ms)[0m  SELECT `links`.* FROM `links` ORDER BY `links`.`id` DESC LIMIT 1
   [1m[36mLink Load (0.4ms)[0m  [1mSELECT `links`.* FROM `links`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategoryNames (20131220023231)
+  [1m[35m (0.3ms)[0m   			CREATE TABLE `category_names` (
+ 				`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 				`name` VARCHAR(50) DEFAULT NULL,
+ 				PRIMARY_KEY `id`
+ 			)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`id`
+  			)ENGINE=InnoDB DEFAULT CHARSET=utf8' at line 4:   			CREATE TABLE `category_names` (
+  				`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  				`name` VARCHAR(50) DEFAULT NULL,
+  				PRIMARY_KEY `id`
+  			)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategoryNames (20131220023231)
+  [1m[35m (0.4ms)[0m   			CREATE TABLE `category_names` (
+ 				`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 				`name` VARCHAR(50) DEFAULT NULL,
+ 				PRIMARY_KEY (`id`)
+ 			)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`id`)
+  			)ENGINE=InnoDB DEFAULT CHARSET=utf8' at line 4:   			CREATE TABLE `category_names` (
+  				`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  				`name` VARCHAR(50) DEFAULT NULL,
+  				PRIMARY_KEY (`id`)
+  			)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategoryNames (20131220023231)
+  [1m[35m (13.8ms)[0m  			CREATE TABLE `category_names` (
+				`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+				`name` VARCHAR(50) DEFAULT NULL,
+				PRIMARY KEY (`id`)
+			)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131220023231')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
