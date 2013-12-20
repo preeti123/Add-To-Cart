@@ -1,0 +1,126 @@
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-19 17:00:00 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/pmuppalla/.rvm/gems/ruby-1.9.3-p125@groupon/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 39ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1m 	CREATE TABLE 'category_names' (
+ 		'id' SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 		'name' VARCHAR(50) DEFAULT NULL
+ 		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+[0m
+SQLite3::SQLException: near "AUTO_INCREMENT": syntax error:   	CREATE TABLE 'category_names' (
+  		'id' SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  		'name' VARCHAR(50) DEFAULT NULL
+  		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1m 		CREATE TABLE 'category_names' (
+ 			'id' SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 			'name' VARCHAR(50) DEFAULT NULL
+ 		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+[0m
+SQLite3::SQLException: near "AUTO_INCREMENT": syntax error:   		CREATE TABLE 'category_names' (
+  			'id' SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  			'name' VARCHAR(50) DEFAULT NULL
+  		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1m 		CREATE TABLE 'category_names' (
+ 			'id' SMALLINT(6) NOT NULL,
+ 			'name' VARCHAR(50) DEFAULT NULL
+ 		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+[0m
+SQLite3::SQLException: near "ENGINE": syntax error:   		CREATE TABLE 'category_names' (
+  			'id' SMALLINT(6) NOT NULL,
+  			'name' VARCHAR(50) DEFAULT NULL
+  		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1m 		CREATE TABLE `category_names` (
+ 			`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 			`name` VARCHAR(50) DEFAULT NULL
+ 		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+[0m
+SQLite3::SQLException: near "AUTO_INCREMENT": syntax error:   		CREATE TABLE `category_names` (
+  			`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  			`name` VARCHAR(50) DEFAULT NULL
+  		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1m 		CREATE TABLE `category_names` (
+ 			`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+ 			`name` VARCHAR(50) DEFAULT NULL
+ 		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+[0m
+SQLite3::SQLException: near "AUTO_INCREMENT": syntax error:   		CREATE TABLE `category_names` (
+  			`id` SMALLINT(6) NOT NULL AUTO_INCREMENT,
+  			`name` VARCHAR(50) DEFAULT NULL
+  		)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (18.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (12.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CategoryNames (20131220010620)
+  [1m[35m (30.4ms)[0m  CREATE TABLE `category_names` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131220010620')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateLinks (20131220015819)
+  [1m[35m (0.4ms)[0m   	 CREATE TABLE `links` (
+ 	 	`id` int(11) NOT NULL AUTO_INCREMENT,
+ 	 	`value` Varchar(100) DEFAULT NULL
+ 	 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+Mysql2::Error: Incorrect table definition; there can be only one auto column and it must be defined as a key:   	  CREATE TABLE `links` (
+  	  	`id` int(11) NOT NULL AUTO_INCREMENT,
+  	  	`value` Varchar(100) DEFAULT NULL
+  	  	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateLinks (20131220015819)
+  [1m[35m (31.6ms)[0m   	 CREATE TABLE `links` (
+ 	 	`id` int(11) NOT NULL AUTO_INCREMENT,
+ 	 	`value` Varchar(100) DEFAULT NULL,
+ 	 	PRIMARY KEY (`id`)
+ 	 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20131220015819')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `links` (`value`) VALUES ('hakjhdjkas')
+  [1m[36m (2.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mLink Load (0.5ms)[0m  SELECT `links`.* FROM `links` ORDER BY `links`.`id` DESC LIMIT 1
+  [1m[36mLink Load (0.4ms)[0m  [1mSELECT `links`.* FROM `links`[0m
